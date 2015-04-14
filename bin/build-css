@@ -1,0 +1,5 @@
+#!/bin/bash  
+node_modules/node-sass/bin/node-sass \
+  --include-path node_modules/TemporalAnalysis/scss \
+  --include-path node_modules/bootstrap-sass/assets/stylesheets \
+  index.scss bundle.css

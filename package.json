@@ -1,0 +1,44 @@
+{
+  "name": "ClimateAnalysis",
+  "version": "0.0.1",
+  "description": "climate data analysis",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.org/Dmitra/climate.git"
+  },
+  "keywords": [
+    "data visualisation",
+    "climate data analysis"
+  ],
+  "author": "Dmitra",
+  "license": "http://dmitra.com/licence",
+  "readmeFilename": "README.md",
+  "scripts": {
+    "start": "python.exe -m SimpleHTTPServer",
+    "build-debug": "browserify app.js -d -o bundle.js",
+    "build-min": "browserify app.js | uglifyjs -c > bundle.min.js",
+    "build-lib": "browserify dependencies.js -o libs.js",
+    "build": "npm run build-debug && npm run build-lib && npm run build-css",
+    "watch-js": "watchify app.js -d -o bundle.js -v",
+    "build-css": "bash ./bin/build-css",
+    "test": "mocha",
+    "pretest": "jshint --exclude-path .gitignore"
+  },
+  "dependencies": {
+    "jquery": "2.1.3",
+    "d3": "<=3.5.0",
+    "lodash": "<=3.5.0",
+    "angular": "1.3.14",
+    "angular-strap": "2.2.0",
+    "temporal-analysis": "https://dmitra@bitbucket.org/dmitra/temporal-charting.git"
+  },
+  "devDependencies": {
+    "browserify": "<=8.1.3",
+    "bootstrap-sass": "latest",
+    "node-sass": "latest",
+    "uglify-js": "latest",
+    "watchify": "latest",
+    "mocha": "latest"
+  }
+}

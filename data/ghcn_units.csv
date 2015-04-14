@@ -1,0 +1,12 @@
+name,caption,unit,scale,type
+SUNR,Sun Radiation,Wh/m2,,sum
+PRCP,Precipitation,mm,0.1,sum
+TMAX,Max Temperature,°C,0.1,max
+TMIN,Min Temperature,°C,0.1,min
+SNOW,Snowfall,mm,0.1,sum
+SNWD,Snow depth,mm,0.1,cumulative
+AWND,Average daily wind speed,m/s,0.1,mean
+WDF2,Direction of fastest 2-minute wind,degrees,,max
+WDF5,Direction of fastest 5-second wind,degrees,,max
+WSF2,Fastest 2-minute wind speed,m/s,0.1,max
+WSF5,Fastest 5-second wind speed,m/s,0.1,max

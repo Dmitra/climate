@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="cityweather">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>City Weather Graph</title>
+    <link rel="stylesheet" type="text/css" ng-href="bundle.css">
+    <script type="text/javascript" src="libs.js"></script>
+  </head>
+  <body>
+    <div id="body" ng-controller="AppController as appCtrl">
+      <h1>City weather statistics for:
+          <button class="btn btn-default"
+                  type="button"
+                  ng-model="appCtrl.station"
+                  ng-change="appCtrl.WeatherProvider.load(appCtrl.station)"
+                  ng-options="station.name for station in appCtrl.WeatherProvider.stations"
+                  bs-select
+                  data-template="{{appCtrl.Path.angularStrap + 'src/select/select.tpl.html'}}"
+                  data-placeholder='...'>
+              <span class="caret"></span>
+          </button>
+      </h1>
+      <h4>as of 5 of February 2015</h4>
+      <div ng-include="appCtrl.Path.ta + 'index.html'" class="container-fluid"></div>
+    </div>
+	
+    <script type="text/javascript" src="bundle.js"></script>
+</body></html>
