@@ -13,9 +13,8 @@
   ],
   "author": "Dmitra",
   "license": "http://dmitra.com/licence",
-  "readmeFilename": "README.md",
   "scripts": {
-    "start": "python.exe -m SimpleHTTPServer",
+    "start": "static",
     "build-debug": "browserify app.js -d -o bundle.js",
     "build-min": "browserify app.js | uglifyjs -c > bundle.min.js",
     "build-lib": "browserify dependencies.js -o libs.js",
@@ -34,6 +33,7 @@
     "temporal-analysis": "https://dmitra@bitbucket.org/dmitra/temporal-charting.git"
   },
   "devDependencies": {
+    "node-static": "latest",
     "browserify": "<=8.1.3",
     "bootstrap-sass": "latest",
     "node-sass": "latest",

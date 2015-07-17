@@ -1,0 +1,15 @@
+@import "_bootstrapVariables";
+@import "_bootstrap";
+@import "node_modules/TemporalAnalysis/scss/_layout";
+@import "node_modules/TemporalAnalysis/scss/_periodSelector";
+@import "node_modules/TemporalAnalysis/scss/_datepicker";
+@import "node_modules/TemporalAnalysis/scss/_chart";
+@import "node_modules/TemporalAnalysis/scss/_tooltip";
+
+body {
+  padding: {
+    top: 20px;
+    bottom: 100px;
+    left: 10px;
+  }
+}

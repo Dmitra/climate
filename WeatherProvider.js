@@ -29,6 +29,8 @@ Self.prototype.dateFormatter = d3.time.format('%Y%m%d')
 
 Self.prototype.load = function (station) {
   var self = this
+  if (!self.items) return setTimeout(function () { self.load(station) }, 100)
+
   var deferred = self.$q.defer()
   if (!station.data) {
     d3.csv('data/' + station.id + '.csv', function (data) {

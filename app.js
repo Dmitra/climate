@@ -1,7 +1,7 @@
 var Path = {
-  root: '../../'
-, ta: '/node_modules/TemporalAnalysis/src/'
-, angularStrap: '/node_modules/angular-strap/'
+  root: ''
+, ta: 'node_modules/TemporalAnalysis/src/'
+, angularStrap: 'node_modules/angular-strap/'
 }
 require('./WeatherProvider')
 var temporalAnalysis = require('TemporalAnalysis')
