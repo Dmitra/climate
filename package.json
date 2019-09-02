@@ -12,7 +12,7 @@
     "climate data analysis"
   ],
   "author": "Dmitra",
-  "license": "http://dmitra.com/licence",
+  "license": "http://daviste.com/licence",
   "scripts": {
     "start": "static",
     "build-debug": "browserify app.js -d -o bundle.js",
