@@ -28,7 +28,7 @@
     "jquery": "2.1.3",
     "d3": "<=3.5.0",
     "lodash": "<=3.5.0",
-    "angular": "1.3.14",
+    "angular": "1.7.9",
     "angular-strap": "2.2.0",
     "temporal-analysis": "https://dmitra@bitbucket.org/dmitra/temporal-charting.git"
   },
